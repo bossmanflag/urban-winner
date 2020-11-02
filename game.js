@@ -13,7 +13,7 @@ let availableQuestions = [];
 let questions = [];
 
 async function nc() {
-  let res = await fetch("http://localhost:3000/getQuestions");
+  let res = await fetch("http://172.105.38.213:3000/getQuestions");
   let newres = await res.json();
   return newres;
 }

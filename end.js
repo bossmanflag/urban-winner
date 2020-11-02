@@ -22,7 +22,7 @@ saveHighScore = (e) => {
     score: mostRecentScore,
     name: username.value,
   };
-  fetch("http://localhost:3000/updateScores", {
+  fetch("http://172.105.38.213:3000/updateScores", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
